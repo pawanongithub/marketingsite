@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco-Friendly Products Offerst</title>
+    <style>
+    body, h1, h2, h3, p, button {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      
+    }
+    
+    
+    body {
+      
+        line-height: 1.6;
+        background-color: #f4f4f4;
+        color: #333;
+    }
+    
+    *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'MV Boli';
+    
+}
+.col-1 img{
+    margin: 0px 10px;
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    margin-top: 5px;
+} 
+ul li{
+    display: inline-block;
+
+}
+
+ul li a{
+    text-decoration: none;
+    color: #1d1b1b;
+    padding: 2px 40px;
+    border: 1px solid transparent;
+    transition: 0.5 ease;
+    font-size: x-large;
+}
+ul li a:hover{
+    background-color: #1d1b1b94;
+        color: #ffffff;
+}
+ul li.active a{
+    background-color: #fff;
+    color: #0000;
+
+}
+
+.col-2 a{
+    font-size:x-large;
+}
+
+.col-3{
+    position: absolute;
+    right: 15px;
+}
+
+.col-3 i{
+    font-size:30px;
+    margin: 10px 20px;
+}
+cont{
+    /* background-image:url(img\payment-img.jpg); */
+    /* background-size:cover; */
+    width: 100%;
+    height: 900px;
+    background-repeat: no-repeat;
+}
+nav-bar{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    background-color: white;
+    color: rgb(216, 33, 33);
+    border-bottom: 1px #d8edf3;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+    header {
+        background: rgb(182, 102, 56);
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+    
+    header h1 {
+        font-size: 2.5em;
+        margin-bottom: 10px;
+    }
+    
+    header p {
+        font-size: 1.2em;
+    }
+    
+    
+    main {
+        padding: 20px;
+    }
+    
+    .offer {
+        background: #e7f3fe;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .offer h2 {
+        color: #333;
+    }
+    
+    .discount {
+        font-weight: bold;
+        color: #d9534f; 
+    }
+    
+    .products, .clay, .jewl, .utensils {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        text-align: left;
+    }
+    
+    .products > div, .clay > div, .jewl > div, .utensils > div {
+        background: white;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        margin: 10px;
+        padding: 15px;
+        flex:1 1 calc(30% - 20px);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+    
+    .products > div:hover, .clay > div:hover, .jewl > div:hover, .utensils > div:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    .products img, .clay img, .jewl img, .utensils img {
+        border-radius: 5px;
+        margin-bottom: 10px;
+        width:100%;
+        height:250px;
+    }
+    
+    h3 {
+        margin: 10px 0;
+        font-size: 1.2em;
+        color: rgb(182, 102, 56); 
+    }
+    
+    p {
+        color: #555;
+    }
+    
+    
+    button {
+        background: rgb(182, 102, 56);
+        color:rgb(36,32, 32);
+        border: none;
+        padding: 10px ;
+        border-radius: 15px;
+        cursor: pointer;
+        transition: backgroung( 0.3s, transform 0.2s);
+        font-size: 1em;
+        
+        
+    }
+    
+    button:hover {
+        background: #45a049;
+        transform: scale(1.05);
+    }
+    
+    
+    footer {
+        text-align: center;
+        padding: 20px 0;
+        background: #baaeae;
+        color: white;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    }
+    
+    
+    @media (max-width: 768px) {
+        .products > div, .clay > div, .jewl > div, .utensils > div {
+            flex: 1 1 calc(45% - 20px); 
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .products > div, .clay > div, .jewl > div, .utensils > div {
+            flex: 1 1 100%; 
+        }
+    }
+    
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <nav-bar>
+            <div class=" col-1">
+                <img src="logo.png">
+            </div>
+            <div class="col-2">
+                <ul>
+                    <li><a href=index.html>Home</a></li>
+                    <li><a href="offer2.html">Offer</a></li>
+                    <li><a href="abouteco.html">About Us</a></li>
+                    <li><a href="prod1.html">Product</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="payment.html">Payment</a></li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <i class="fa-solid fa-magnifying-glass" style="color: #f1b9b9;"></i>
+                <i class="fa-solid fa-bag-shopping" style="color: #f1b9b9;"></i>
+                <i class="fa-regular fa-user" style="color: #f1b9b9;"></i>
+            </div>
+        </nav-bar>
+    <header>
+        <h1>Special offers on Eco-friendly prooducts</h1>
+        <p>Join the zero-waste movement and enjoy great discount</p>
+    </header>
+    <main>
+        <section class="offer">
+            <h2> Limited Time Offers</h2>
+            <p> Get up to <span class="discount"> 50% off</span> on select items</p>
+            <button class="shop.now"> Shop Now</button>
+        </section>
+        <section class="products">
+            <div class="products">
+                <img src="img\bamboo_straw.jpeg" alt="Eco-Friendly Products1" >
+                <h3> Resuable Bamboo Straw</h3>
+                <p>Rs:200/ Per Box<br>Rs:20/ Per Pices<br>Today Offer:30% off</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="products">
+                <img src="img\recycle_notebook.jpeg" alt="Eco-Friendly Products2">
+                <h3> Recycled Paper Notebooks</h3>
+                <p>Rs:500/ Per Set<br>Rs:50/ Per Book<br>Today Offer:50% off</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="products">
+                <img src="img\food wrap.jpg" alt="Eco-Friendly Products3">
+                <h3>Compostable Food Wraps</h3>
+                <p>Rs:250/ Per Set<br>Rs:70/ Per Wrap<br>Today Offer:20% off</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="products">
+                <img src="img\shopping bags.jpeg" alt="Eco-Friendly Products4">
+                <h3>Resuable Shopping Bags </h3>
+                <p>Rs:100/ Per Set<br>Rs:10/ Per Bag<br>Today Offer:20% off</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="products">
+                <img src="img\bamboo toothbrush.jpeg" alt="Eco-Friendly Products5" >
+                <h3>Bamboo Toohtbrush</h3>
+                <p>Rs:250/ Per Box<br>Rs:50/ Per Brush<br>Today Offer:15% off</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="products">
+                <img src="img\eco cleaner.jpg" alt="Eco-Friendly Products6" >
+                <h3>Eco-Friendly cleaner</h3>
+                <p>Rs:1000/ Per Box<br>Rs:100/ Per Bottle<br>Today Offer:50% off</p>
+                <button>Add to Cart</button>
+            </div>
+        </section>
+        <section class="clay">
+            <div class="clay">
+                <img src="img\bowl.jpg" alt="clay1">
+                <h3>Coconut Bowl</h3>
+                <p>Rs:700/ Per Bowl<br> Today Offer:20% off</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="clay">
+                <img src="img\bowl1.jpg" alt="clay2" >
+                <h3>Bowl set</h3>
+                <p>Rs:1200/ Per Set<br>Today Offer:15% off</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="clay">
+                <img src="img\hanging.jpg" alt="clay3" >
+                <h3>Coconut hanging</h3>
+                <p>Rs:900/Per Hanging<br>Today Offer:12% off</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="clay">
+                <img src="img\plant pot.jpg" alt="clay4" >
+                <h3>Coconut Plant Pot</h3>
+                <p>Rs:450/Per Pot<br>Today Offer:15% off</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="clay">
+                <img src="img\candle.jpg" alt="clay5" >
+                <h3>Coconut Candle</h3>
+                <p>Rs:250/Per Candle<br>Today Offer:18% off</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="clay">
+                <img src="img\shell holder.jpg" alt="clay6" >
+                <h3>Coconut Shell Holder</h3>
+                <p>Rs:370/Per holder<br>Today Offer:25% off</p>
+                <button>Add to Cart</button>
+            </div>
+        </section>
+        <section class="jewl">
+            <div class="jewl">
+                <img src="img\jewl0.jpg" alt="jewl1" >
+                <h3>Terracotta Jewellery Set</h3>
+                <p>Rs:1700/Per Set<br>Today Offer:12% off</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="jewl">
+                <img src="img\jewl1.jpg" alt="jewl2" >
+                <h3>Terracotta Pink Jewellery Set</h3>
+                <p>Rs:1600/Per Set<br>Today Offer:10% off</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="jewl">
+                <img src="img\jewl2.jpg" alt="jewl3" >
+                <h3>Terracotta Jewellery Set</h3>
+                <p>Rs:1700/Per Set<br>Today Offer:12% off</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="jewl">
+                <img src="img\jewl4.jpg" alt="jewl4" >
+                <h3>Terracotta Earrings</h3>
+                <p>Rs:1200/Per Pair<br>Today Offer:16% off</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="jewl">
+                <img src="img\jewl5.jpg" alt="jewl5">
+                <h3>Terra Bangles</h3>
+                <p>Rs:800/Per Bangle<br>Today offer:11% off</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="jewl">
+                <img src="img\jewl6.jpg" alt="jewl6" >
+                <h3>Terracotta Earrings</h3>
+                <p>Rs:600/Per Pair<br>Today Offer:14% off</p>
+                <button>Add to Cart</button>
+            </div>
+        </section>
+        <section class="utensils">
+            <div class="utensils">
+                <img src="img\cooker.jpg" alt="utensils1" >
+                <h3>Terracotta Cooker</h3>
+                <p>Rs:1300/Per Cooker<br>Today Offer:11% off</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="utensils">
+                <img src="img\cooking_pot.jpg" alt="utensils2" >
+                <h3>Terracotta Cooking Pot</h3>
+                <p>Rs:1200/Per Pot<br>Today Offer:8% off</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="utensils">
+                <img src="img\dish.jpg" alt="utensils3" >
+                <h3>Terracotta Thali</h3>
+                <p>Rs:1800/Per Thali<br>Today Offer:15% off</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="utensils">
+                <img src="img\hourse.jpg" alt="utensils4" >
+                <h3>Terracotta Toy</h3>
+                <p>Rs:1100/Per Pices<br>Today Offer:5% off</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="utensils">
+                <img src="img\pot.jpg" alt="utensils5" >
+                <h3>Terracotta Pot</h3>
+                <p>Rs:800/Per Pot<br>Today Offer:13% off</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="utensils">
+                <img src="img\temple.jpg" alt="utensils6" >
+                <h3>Terracotta Idol</h3>
+                <p>Rs:1200/Per Idol<br>Today Offer:14% off</p>
+                <button >Add to Cart</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <img src="img/logo.png"  width="100">
+                
+            </div>
+            <div class="footer-column">
+                <h3>QUICK LINKS</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="offer2.html">Offer</a></li>
+                    <li><a href="abouteco.html">About Us</a></li>
+                    <li><a href="Coconut_shell.html">Product</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="payment.html">Payment</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>LET US HELP YOU</h3>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Return & Exchange</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Shipping Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>GET IN TOUCH</h3>
+                <p>📞 +91-8146793738</p>
+                <p>📧 ktarundeep24@gmail.com</p>
+                <div class="social-icons">
+                    <a href="#">🔵</a>
+                    <a href="#">🐦</a>
+                    <a href="#">📸</a>
+                    <a href="#">▶️</a>
+                </div>
+            </div>
+        </div>
+       
+    </footer>
+    <footer>
+        <p> 2025 Eco-Friendly Store. All rights reserved</p>
+    </footer>
+</body>
+</html>

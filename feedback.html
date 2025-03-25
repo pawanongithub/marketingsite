@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+ *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:MV Boli ; 
+    
+}
+.col-1 img{
+    margin: 0px 10px;
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    margin-top: 5px;
+} 
+ul li{
+    display: inline-block;
+
+}
+
+ul li a{
+    text-decoration: none;
+    color: #1d1b1b;
+    padding: 2px 40px;
+    border: 1px solid transparent;
+    transition: 0.5 ease;
+    font-size: x-large;
+}
+ul li a:hover{
+    background-color: #1d1b1b94;
+        color: #ffffff;
+}
+ul li.active a{
+    background-color: #fff;
+    color: #0000;
+
+}
+
+.col-2 a{
+    font-size:x-large;
+}
+
+.col-3{
+    position: absolute;
+    right: 15px;
+}
+
+.col-3 i{
+    font-size:30px;
+    margin: 10px 20px;
+}
+cont{
+    /* background-image:url(img\payment-img.jpg); */
+    /* background-size:cover; */
+    width: 100%;
+    height: 900px;
+    background-repeat: no-repeat;
+}
+nav-bar{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    background-color: white;
+    color: rgb(216, 33, 33);
+    border-bottom: 1px #d8edf3;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+.wrap{ margin:30px auto;
+          width:800px;
+          height:700px;}
+h1{text-align:center;
+          font-size:xx-large;}
+          table{font-size:26px;}
+ body{ background-image: url(img/Eco-friendly.jpg);
+        background-size:cover;    
+    }
+ .txt{width:80%;
+              height:30px;
+              border-radius:6px;}
+
+.msg{width:120%;
+            height:100px;
+            border-radius:6px;}  
+.btn{width:20%;
+                height:40px;
+                 border-radius:6px;
+                background-color: rgb(211, 136, 75);
+               color:white;}   
+               
+ footer {
+        text-align: center;
+        padding: 20px 0;
+        background: #baaeae;
+        color: white;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    }             
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <nav-bar>
+            <div class=" col-1">
+                <img src="img/logo.png">
+            </div>
+            <div class="col-2">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="offer2.html">Offer</a></li>
+                    <li><a href="abouteco.html">About Us</a></li>
+                    <li><a href="Coconut_shell.html">Product</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="payment.html">Payment</a></li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <i class="fa-solid fa-magnifying-glass" style="color: #f1b9b9;"></i>
+                <i class="fa-solid fa-bag-shopping" style="color: #f1b9b9;"></i>
+                <i class="fa-regular fa-user" style="color: #f1b9b9;"></i>
+            
+    
+            </div>
+        </nav-bar>
+    </div>
+    <div class="wrap">
+    <table>
+    <form action="" method="">
+    <h1>Feedback Form</h1>
+    <hr>
+    <tr>
+        <td>
+            <label>
+                How do you rate your overall experience
+                <br>
+                 <input type="radio" name="rate" value="bad">Bad
+                 <input type="radio" name="rate" value="bad">Average
+                 <input type="radio" name="rate" value="bad">Good
+
+            </label>
+        </td>
+    </tr>
+   
+    <tr>
+        <td>
+            <label>
+                Name*  
+                <br> 
+                <input type="text" name="fullname" class="txt">
+
+            </label>
+        </td>
+    
+
+        <td>
+         <label>
+            Email* 
+            <br>
+            <input type="text" name="email"  class="txt">
+
+         </label>
+        </td>
+    </tr>
+
+<tr>
+    <td>
+        <label>
+            Phone*  
+            <br>
+            <input type="text" name="phonenumber"  class="txt">
+
+        </label>
+    </td>
+    <td>
+        <label>
+            Age  
+            <br>
+            <input type="text" name="age"  class="txt">
+
+        </label>
+    </td>
+
+</tr>
+
+<tr>
+    <td>
+        <label>
+            Message   
+            <br>  
+            <textarea   class="msg">
+
+            </textarea>
+
+        </label>
+    </td>
+</tr>
+   
+<td>
+          
+        <button  class="btn">Submit</button>
+   
+</td>
+  
+
+    </form>
+</table>
+</div>
+<!--footer section starts-->
+
+<footer>
+    <div class="footer-container">
+      <div class="footer-column">
+          <img src="img/logo.png"  width="100">
+          
+      </div>
+      <div class="footer-column">
+          <h3>QUICK LINKS</h3>
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="offer2.html">Offer</a></li>
+              <li><a href="abouteco.html">About Us</a></li>
+              <li><a href="Coconut_shell.html">Product</a></li>
+              <li><a href="feedback.html">Feedback</a></li>
+              <li><a href="payment.html">Payment</a></li>
+          </ul>
+      </div>
+      <div class="footer-column">
+          <h3>LET US HELP YOU</h3>
+          <ul>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Return & Exchange</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Shipping Policy</a></li>
+          </ul>
+      </div>
+      <div class="footer-column">
+          <h3>GET IN TOUCH</h3>
+          <p>📞 +91-8146793738</p>
+          <p>📧 ktarundeep24@gmail.com</p>
+          <div class="social-icons">
+              <a href="#">🔵</a>
+              <a href="#">🐦</a>
+              <a href="#">📸</a>
+              <a href="#">▶️</a>
+          </div>
+      </div>
+    </div>
+    </footer>
+    
+    <footer>
+    <p> 2025 Eco-Friendly Store. All rights reserved</p>
+    </footer>
+</body>
+</html>
