@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
     margin: 0px;
     padding: 0px;
@@ -23,12 +24,41 @@ nav {
     width: 100%;
     display: flex;
     justify-content: flex-start;
+=======
+*{
+    margin:0px;
+    padding:0px;
+    font-family:MV Boli;
+}
+.cont{
+    background-image:url(img/Old_monk.jpg);
+    background-size:cover;
+    width: 100%;
+    height: 900px;
+    background-repeat: no-repeat;
+    
+    
+}
+
+.cont a{
+    font-size: medium;
+}
+
+nav{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content:flex-start;
+>>>>>>> ffe47d5c95265ccd52b4753261397246e9317af0
     align-items: center;
     background-color: rgba(0, 255, 255, 0);
     color: black;
     border-bottom: 1px #d8edf3;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> ffe47d5c95265ccd52b4753261397246e9317af0
 .section {
     position: absolute;
     bottom: 70px;
@@ -37,17 +67,28 @@ nav {
     width: 100%;
     /*border: 2px solid red;*/
     color: #000000;
+<<<<<<< HEAD
 }
 
 .section p {
+=======
+} 
+
+.section p{
+>>>>>>> ffe47d5c95265ccd52b4753261397246e9317af0
     position: absolute;
     bottom: 100px;
     left: 10px;
     font-size: 20px;
+<<<<<<< HEAD
 }
 
 .section button {
     text-decoration-line: none;
+=======
+} 
+.section button{
+>>>>>>> ffe47d5c95265ccd52b4753261397246e9317af0
     position: absolute;
     bottom: 10px;
     left: 30px;
@@ -56,6 +97,7 @@ nav {
     border-radius: 0px;
     border: none;
 }
+<<<<<<< HEAD
 
 &:hover {
     background-color: #1d1b1b94;
@@ -65,28 +107,53 @@ nav {
 
 .col-1 img {
     margin: 19px;
+=======
+&:hover{
+        background-color: #1d1b1b94;
+        color: #ffffff;
+    }
+
+
+.col-1 img{
+    margin: 19%;
+>>>>>>> ffe47d5c95265ccd52b4753261397246e9317af0
     padding: 15px;
     height: 110px;
     width: 90%;
     border-radius: 50%;
+<<<<<<< HEAD
     opacity: 5px;
 
 
 }
 
 ul li {
+=======
+
+    
+}
+
+ul li{
+>>>>>>> ffe47d5c95265ccd52b4753261397246e9317af0
     display: inline-block;
 
 }
 
+<<<<<<< HEAD
 ul li a {
     text-decoration: none;
     color: #e1d5d5;
+=======
+ul li a{
+    text-decoration: none;
+    color: #1d1b1b;
+>>>>>>> ffe47d5c95265ccd52b4753261397246e9317af0
     padding: 2px 40px;
     border: 1px solid transparent;
     transition: 0.5 ease;
     font-size: x-large;
 }
+<<<<<<< HEAD
 
 ul li a:hover {
     background-color: #1d1b1b94;
@@ -94,10 +161,18 @@ ul li a:hover {
 }
 
 ul li.active a {
+=======
+ul li a:hover{
+    background-color: #1d1b1b94;
+        color: #ffffff;
+}
+ul li.active a{
+>>>>>>> ffe47d5c95265ccd52b4753261397246e9317af0
     background-color: #fff;
     color: #0000;
 
 }
+<<<<<<< HEAD
 
 .col-2 ul a {
     font-size: x-large;
@@ -107,10 +182,18 @@ ul li.active a {
 }
 
 .col-3 {
+=======
+.col-2 a{
+    font-size:x-large;
+}
+
+.col-3{
+>>>>>>> ffe47d5c95265ccd52b4753261397246e9317af0
     position: absolute;
     right: 15px;
 }
 
+<<<<<<< HEAD
 .col-3 i {
     font-size: 25px;
     margin: 10px 20px;
@@ -120,6 +203,16 @@ ul li.active a {
     display: flex;
 
     justify-content: space-around;
+=======
+.col-3 i{
+    font-size:25px;
+    margin: 10px 20px;
+}
+.card-container {
+    display: flex;
+
+    justify-content:space-around;
+>>>>>>> ffe47d5c95265ccd52b4753261397246e9317af0
 
     gap: 20px;
     padding: 50px;
@@ -164,6 +257,7 @@ ul li.active a {
     margin-bottom: 15px;
 }
 
+<<<<<<< HEAD
 .section .mybutton {
     border: #1b1919;
     border-radius: 20px;
@@ -183,11 +277,19 @@ a {
 .button {
     padding: 10px 20px;
     background: rgb(243, 236, 236);
+=======
+.button {
+    padding: 10px 20px;
+    background: white;
+>>>>>>> ffe47d5c95265ccd52b4753261397246e9317af0
     color: black;
     border: none;
     font-size: 14px;
     text-transform: uppercase;
+<<<<<<< HEAD
 
+=======
+>>>>>>> ffe47d5c95265ccd52b4753261397246e9317af0
     font-weight: bold;
     cursor: pointer;
     border-radius: 5px;
@@ -198,8 +300,12 @@ a {
     background: black;
     color: white;
 }
+<<<<<<< HEAD
 
 .row2 {
+=======
+.row2{
+>>>>>>> ffe47d5c95265ccd52b4753261397246e9317af0
     padding: 30px 0px;
     display: flex;
     justify-content: space-evenly;
@@ -208,6 +314,7 @@ a {
 }
 
 .shop-now h2 {
+<<<<<<< HEAD
     font-size: x-large;
     margin-bottom: 20px;
     text-align: center;
@@ -215,6 +322,13 @@ a {
 
 }
 
+=======
+    font-size:x-large;
+    margin-bottom: 20px;
+    text-align: center;
+    
+}
+>>>>>>> ffe47d5c95265ccd52b4753261397246e9317af0
 .product-slider {
     display: flex;
     align-items: center;
@@ -222,24 +336,36 @@ a {
     position: relative;
     max-width: 100%;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> ffe47d5c95265ccd52b4753261397246e9317af0
 .product-container {
     display: flex;
     overflow: hidden;
     width: 80%;
     justify-content: center;
+<<<<<<< HEAD
     background-color: #cde0e6;
 
 }
 
 .product {
     background: rgb(126, 95, 95);
+=======
+    background-color: #d8edf3;
+
+}
+.product {
+    background: white;
+>>>>>>> ffe47d5c95265ccd52b4753261397246e9317af0
     margin: 10px;
     padding: 25px;
     border-radius: 10px;
     text-align: center;
     min-width: 250px;
     transition: 0.5s;
+<<<<<<< HEAD
     background-color: #e7dadaf3;
 
 }
@@ -253,34 +379,55 @@ a {
     color: #201f1c;
 }
 
+=======
+    background-color: #f0f0f0f3;
+
+}
+.product img {
+    
+    border-radius: 10px;
+}
+>>>>>>> ffe47d5c95265ccd52b4753261397246e9317af0
 .rating {
     color: #f5c518;
     font-size: 14px;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> ffe47d5c95265ccd52b4753261397246e9317af0
 .price {
     font-size: 16px;
     font-weight: bold;
     margin: 5px 0;
 }
+<<<<<<< HEAD
 
 .price {
     color: #1b1b1a;
 }
 
+=======
+>>>>>>> ffe47d5c95265ccd52b4753261397246e9317af0
 .quantity {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 10px 0;
 }
+<<<<<<< HEAD
 
 .quantity button {
     background-color: #ad9b9b;
+=======
+.quantity button {
+    background-color: #ddd;
+>>>>>>> ffe47d5c95265ccd52b4753261397246e9317af0
     border: none;
     padding: 5px 10px;
     cursor: pointer;
 }
+<<<<<<< HEAD
 
 .quantity span {
     padding: 0 10px;
@@ -288,6 +435,12 @@ a {
     color: #1b1b1a;
 }
 
+=======
+.quantity span {
+    padding: 0 10px;
+    font-size: 16px;
+}
+>>>>>>> ffe47d5c95265ccd52b4753261397246e9317af0
 .add-to-cart {
     background-color: yellow;
     border: none;
@@ -296,7 +449,10 @@ a {
     cursor: pointer;
     width: 100%;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> ffe47d5c95265ccd52b4753261397246e9317af0
 .prev .next {
     background-color: black;
     color: white;
@@ -307,7 +463,10 @@ a {
     border-radius: 50%;
     position: absolute;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> ffe47d5c95265ccd52b4753261397246e9317af0
 .prev {
     left: 0;
 }
@@ -315,7 +474,10 @@ a {
 .next {
     right: 0;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> ffe47d5c95265ccd52b4753261397246e9317af0
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -323,6 +485,7 @@ body {
     background: #f5f5f5;
 }
 
+<<<<<<< HEAD
 .footer-column {
     flex: 1;
     min-width: 200px;
@@ -397,6 +560,68 @@ footer {
 
 input {
     color: black;
+=======
+.footer-container { 
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width:auto;
+    height: 200px;
+    padding:20px;
+    border: 2px solid white;
+    margin: 20px auto;
+    
+}
+.footer-column {
+    flex: 1;
+    width: 900px;
+    height: 200px;
+    text-align: left;
+    /* border: 2px solid red; */
+
+
+}
+.footer-column img{
+    margin-left: 70px;
+    margin-top: 90px;
+    border-radius: 50%;
+    
+}
+.footer-column h3 {
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+    color: #0f0f0f;
+}
+.footer-column ul li a {
+    text-decoration: none;
+    color: #201f1f;
+    font-size: medium;
+    margin-left: 0px;
+    /* border: 2px solid red; */
+    /* padding: 1px; */
+
+}
+.footer-column ul li a:hover {
+    color: #000;
+}
+.social-icons a {
+    margin: 0 10px;
+    color: #555;
+    font-size: 20px;
+    text-decoration: none;
+}
+.social-icons a:hover {
+    color: #000;
+}
+.footer-bottom {
+    margin-top: 40px;
+    font-size: 12px;
+    color: #555;
+>>>>>>> ffe47d5c95265ccd52b4753261397246e9317af0
 }
 
 /*.image img{
@@ -427,4 +652,19 @@ input {
 .col-5 ul li a{
     font-size: small;
     font-family: MV Boli;
+<<<<<<< HEAD
 }/*
+=======
+}/*
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> ffe47d5c95265ccd52b4753261397246e9317af0
