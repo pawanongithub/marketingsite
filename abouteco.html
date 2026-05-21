@@ -1,0 +1,730 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loopify</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: MV Boli;
+        }
+
+        body {
+
+            background-color: #894329 #12727d #fcb886;
+            margin: 0;
+            padding: 0;
+            background:
+                linear-gradient(#fa813b, transparent),
+                linear-gradient(to top left, #84ceeb, transparent),
+                linear-gradient(to top right, #c1c8e4, transparent);
+            background-blend-mode: screen;
+        }
+
+        .col-1 img {
+            height: 55px;
+            width: 55%;
+
+
+        }
+
+        ul li {
+            display: inline-block;
+
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: #1d1b1b;
+            padding: 2px 40px;
+            border: 1px solid transparent;
+            transition: 0.5 ease;
+            font-size: x-large;
+        }
+
+        ul li a:hover {
+            background-color: #1d1b1b94;
+            color: #ffffff;
+        }
+
+        ul li.active a {
+            background-color: #fff;
+            color: #0000;
+
+        }
+
+        .col-2 a {
+            font-size: x-large;
+        }
+
+        .col-3 {
+            position: absolute;
+            right: 15px;
+        }
+
+        .col-3 i {
+            font-size: 30px;
+            margin: 10px 20px;
+        }
+
+        cont {
+            /* background-image:url(img\payment-img.jpg); */
+            /* background-size:cover; */
+            width: 100%;
+            height: 900px;
+            background-repeat: no-repeat;
+        }
+
+        nav-bar {
+            height: 70px;
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            background-color: white;
+            color: rgb(216, 33, 33);
+            border-bottom: 1px #d8edf3;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+        }
+
+        .header {
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(9, 1, 115, 0.1);
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .earth-bg {
+            background-color: #dce4e0;
+            width: 100%;
+            height: 350px;
+            box-shadow: 0 2px 4px rgba(9, 1, 115, 0.1);
+            /* border: 2px solid red; */
+            border-bottom-left-radius: 100%;
+            border-bottom-right-radius: 100%;
+            margin-bottom: 90px;
+
+        }
+
+
+        .main {
+            text-align: center;
+            /* padding: 50px 20px; */
+        }
+
+        .main nav {
+            color: #ba5209;
+            font-size: 35px;
+            margin-bottom: 20px;
+        }
+
+        .main nav a {
+            color: #999;
+            text-decoration: none;
+        }
+
+        .main nav a:hover {
+            text-decoration: underline;
+        }
+
+        .main nav span {
+            margin: 0 10px;
+        }
+
+        .earth-bg img {
+            margin-bottom: 20px;
+            padding: 50px;
+            filter: drop-shadow(8px 8px 4px #01011a);
+        }
+
+        .main .links {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .main .links a {
+            color: #6320059c;
+            text-decoration: none;
+            margin: 0 10px;
+            padding-bottom: 5px;
+            font-size: x-large;
+        }
+
+        .main .links a:hover {
+            color: #ab4307;
+        }
+
+        .main .links a.active {
+            color: #ab4307;
+            border-bottom: 2px solid #ab4307;
+        }
+
+        .main h2 {
+            color: #141313;
+            font-size: 17px;
+            margin-bottom: 40px;
+        }
+
+        .main .features {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+        }
+
+        .main .features div {
+            text-align: center;
+        }
+
+        .main .features div img {
+            margin-bottom: 10px;
+        }
+
+        .main .features div h4 {
+            color: #655151;
+            text-shadow: 1px 1px #0b0909;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .main .features div p {
+            color: #594e4e;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .product-features {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .product-feature {
+            flex: 1 1 200px;
+            max-width: 200px;
+            text-align: center;
+        }
+
+        .product-feature img {
+            width: 80px;
+            height: 80px;
+        }
+
+        .product-feature img {
+            background-color: #f0f0f0;
+            border-radius: 50%;
+            padding: 10px;
+        }
+
+        hr {
+            margin: 40px 0;
+            border: 0;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        .container-i2 {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 40px;
+            font-style: italic;
+        }
+
+        .team-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .team-member {
+            flex: 1 1 calc(33.333% - 20px);
+            box-sizing: border-box;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .team-member img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        .team-member h2 {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+
+        .team-member p {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .team-member p.role {
+            font-weight: bold;
+            color: #333;
+        }
+
+        @media (max-width: 768px) {
+            .team-member {
+                flex: 1 1 calc(50% - 20px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .team-member {
+                flex: 1 1 100%;
+            }
+        }
+
+        .container-i3 {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        @media (min-width: 640px) {
+            .grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        .card {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .card img {
+            max-width: 200px;
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        .card h2 {
+            font-size: 1.125rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #4b5563;
+        }
+
+        .footer {
+            background-color: #F4F3F0;
+            color: white;
+            padding: 2rem 0;
+        }
+
+        .container-i5 {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .footer-column {
+            flex: 1;
+            min-width: 200px;
+            margin-bottom: 1rem;
+        }
+
+        .footer-column h3 {
+            font-size: 1.125rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-column .underline {
+            width: 2.5rem;
+            height: 0.25rem;
+            background-color: #ec4899;
+            margin-bottom: 1rem;
+        }
+
+        .footer-column ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-column ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-column ul li a {
+            color: #090a0a;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-column ul li a:hover {
+            color: white;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .social-icons a {
+            color: #9ca3af;
+            font-size: 1.25rem;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: white;
+        }
+
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #baaeae;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -2px 5px rgba(20, 20, 20, 0.2);
+        }
+
+
+        @media (max-width: 768px) {
+
+            .products>div,
+            .clay>div,
+            .jewl>div,
+            .utensils>div {
+                flex: 1 1 calc(45% - 20px);
+            }
+        }
+
+        @media (max-width: 480px) {
+
+            .products>div,
+            .clay>div,
+            .jewl>div,
+            .utensils>div {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cont">
+        <nav-bar>
+            <div class=" col-1">
+                <a href="index.html">
+                    <img src="img/logo.png"></a>
+            </div>
+            <div class="col-2">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="offer2.html">Offer</a></li>
+                    <li><a href="abouteco.html">About Us</a></li>
+                    <!-- <li><a href="Coconut_shell.html">Product</a></li> -->
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="payment.html">Payment</a></li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <i class="fa-solid fa-magnifying-glass" style="color: #f1b9b9;"></i>
+                <i class="fa-solid fa-bag-shopping" style="color: #f1b9b9;"></i>
+                <i class="fa-regular fa-user" style="color: #f1b9b9;"></i>
+
+
+            </div>
+        </nav-bar>
+    </div>
+    <main class="main">
+        <div class="earth-bg">
+            <img src="img/earth.png" alt="Earth with party hat and hearts" width="300" height="300">
+
+        </div>
+        <div class="links">
+            <a href="#">Our story</a>
+            <span>|</span>
+            <a href="#" class="active">Why trash&Treasure?</a>
+            <span>|</span>
+            <a href="#">Our team</a>
+            <span>|</span>
+            <a href="#">In the press</a>
+        </div>
+        <h1>Because we’re happy when our planet is happy!</h1>
+        <div class="features">
+            <div>
+                <img src="img/reasons-1 (1).png" alt="Sustainable products icon" width="70" height="70">
+                <h4>Sustainable products</h4>
+                <p>100% plastic-free</p>
+            </div>
+            <div>
+                <img src="img/reasons-2 (1).svg" alt="Full disclosure icon" width="70" height="70">
+                <h4>Full disclosure</h4>
+                <p>100% transparency</p>
+            </div>
+            <div>
+                <img src="img/reasons-4 (1).svg" alt="Measurable impact icon" width="70" height="70">
+                <h4>Measurable impact</h4>
+                <p>Every purchase adds up!</p>
+            </div>
+        </div>
+    </main>
+    <hr>
+    <div class="container">
+        <h2>A T&T product is always...</h2>
+        <div class="product-features">
+            <div class="product-feature">
+                <img src="img/plastic-free (1).svg" alt="Plastic-free icon">
+                <h3>100% plastic-free</h3>
+                <p>All our products and packaging are absolutely plastic-free!</p>
+            </div>
+            <div class="product-feature">
+                <img src="img/Cruelty-free (1).svg" alt="Cruelty-free icon">
+                <h3>Cruelty-free</h3>
+                <p>None of our products are tested on animals</p>
+            </div>
+            <div class="product-feature">
+                <img src="img/Locally-sourced (1).svg" alt="Locally sourced icon">
+                <h3>Locally sourced</h3>
+                <p>All our products are sourced from locations closest to where you are to keep the carbon footprint low
+                    and empower local businesses</p>
+            </div>
+            <div class="product-feature">
+                <img src="img/Chemical-free (1).svg" alt="Chemical-free icon">
+                <h3>Chemical-free</h3>
+                <p>All our products are made from natural ingredients</p>
+            </div>
+        </div>
+    </div>
+    <div class="container-i2">
+        <h1>Say hello to our team!</h1>
+        <div class="team-grid">
+            <div class="team-member">
+                <img src="https://storage.googleapis.com/a1aa/image/prFksQtD6yUb91HyDQ803CjUHlYAFi41K_SRTWjfwFE.jpg"
+                    alt="Portrait of Saurabh Gupta">
+                <h2>Saurabh Gupta</h2>
+                <p class="role">Co-Founder | Guitarist</p>
+                <p>Saurabh is working towards a trash-free world. By launching T&T, Saurabh has combined two of his
+                    greatest passions: solving complex design problems, and creating a cure for the plastic pandemic.
+                </p>
+            </div>
+            <div class="team-member">
+                <img src="https://storage.googleapis.com/a1aa/image/-p_zBuHcO7tfQLW58qKACpG6uo-cKHgHbT6hjIlXKLA.jpg"
+                    alt="Portrait of Hemal Gathani">
+                <h2>Hemal Gathani</h2>
+                <p class="role">Co-Founder | Semi-Pro Wildlife Photographer</p>
+                <p>Hemal is an ardent wildlife photographer who enjoys seeing animals in their natural habitat. By
+                    launching T&T, he hopes to ensure that we conserve our wildlife, our forests, our resources and the
+                    world around us.</p>
+            </div>
+            <div class="team-member">
+                <img src="https://storage.googleapis.com/a1aa/image/_gEs-yB_vEZHLEdHc-UWKzhNwHuQV8hoDsgBHZj6HFc.jpg"
+                    alt="Portrait of Shweta Jain">
+                <h2>Shweta Jain</h2>
+                <p class="role">Operations | Nature Lover</p>
+                <p>Rarely found without a book in her vicinity, Shweta is a number cruncher and execution specialist who
+                    loves solving problems. She brings retail expertise to the team and believes no effort is too small
+                    to make a difference, and Loopify is her way of proving it.</p>
+            </div>
+            <div class="team-member">
+                <img src="https://storage.googleapis.com/a1aa/image/_VrrCiWEVAgycCKfDwhCwmNTJMX1jihwmoIqEAWdST4.jpg"
+                    alt="Portrait of Avani Mehta">
+                <h2>Avani Mehta</h2>
+                <p class="role">Vendor Management & Sourcing | Entrepreneur</p>
+                <p>Avani is passionate about sustainable sourcing and vendor management. She ensures that Loopify's
+                    supply chain is ethical and environmentally friendly, contributing to a greener planet.</p>
+            </div>
+            <div class="team-member">
+                <img src="https://storage.googleapis.com/a1aa/image/IJkPSIXyfn75D2ga80cdobKdaYOenhr4e_ESKOwjILw.jpg"
+                    alt="Portrait of Tanvi Purohit">
+                <h2>Tanvi Purohit</h2>
+                <p class="role">Product & UX | Savvy Coder Lady</p>
+                <p>Tanvi is a product and UX expert who loves creating user-friendly interfaces. She ensures that
+                    Loopify's products are not only functional but also delightful to use.</p>
+            </div>
+            <div class="team-member">
+                <img src="https://storage.googleapis.com/a1aa/image/TJBB780gFoLYH_BGFP2doRGBgI77SDghvzxp5DM_lm4.jpg"
+                    alt="Portrait of Harshad Shetty">
+                <h2>Harshad Shetty</h2>
+                <p class="role">Internal | Data Master</p>
+                <p>Harshad is a data enthusiast who loves crunching numbers and deriving insights. He ensures that
+                    Loopify's decisions are data-driven and backed by solid analysis.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container-i3">
+        <h1>Some good news for us, and our planet!</h1>
+        <div class="grid">
+            <div class="card">
+                <img src="https://storage.googleapis.com/a1aa/image/bBPuwS-8Kp5DxS8Iwwibgb2kL6v28fGlxyyugt0dymE.jpg"
+                    alt="BW Businessworld logo">
+                <h2>Loopify: Pioneering Sustainable Gifting</h2>
+                <p>22 january 2025</p>
+            </div>
+            <div class="card">
+                <img src="https://storage.googleapis.com/a1aa/image/2i25yPOO53IgkLuZXFh0e449ArBmU5MlWANWyxAAwEw.jpg"
+                    alt="Outlook Start-Up logo">
+                <h2>On track to achieve 200 per cent growth this fiscal year, sustainable gifting platform Loopify
+                    scouts funding opportunities.</h2>
+                <p>26 februray 2025</p>
+            </div>
+            <div class="card">
+                <img src="https://storage.googleapis.com/a1aa/image/2q7ELhJmssg8NvMJyvr_CQPzdFucEdNJnWSH4OINluA.jpg"
+                    alt="Sustainability World logo">
+                <h2>Celebrating The Sustainable World Torch-Bearers 2023</h2>
+                <p>22 November 2024</p>
+            </div>
+            <div class="card">
+                <img src="https://storage.googleapis.com/a1aa/image/aSYD4nIaKHCe8RQXGSmKnt9inY2jvzOSgZ4qZvahCs0.jpg"
+                    alt="The Economic Times logo">
+                <h2>Diwali season: Gifting companies feel freeze of IT slowdown</h2>
+                <p>11 November 2024</p>
+            </div>
+            <div class="card">
+                <img src="https://storage.googleapis.com/a1aa/image/5Ak7vQSPXJd0-hDrFpFNXLZrF6hjqcKoaPiB5VL8NaQ.jpg"
+                    alt="FE Leisure logo">
+                <h2>Sustainable the key ingredient in corporate gifting this season</h2>
+                <p>06 january 2025</p>
+            </div>
+            <div class="card">
+                <img src="https://storage.googleapis.com/a1aa/image/dFhtpqvBs32EiFTiEHM2FRx0IlxcqqP7a4MA4NE8_Jg.jpg"
+                    alt="Businessline logo">
+                <h2>When green becomes the colour of gifting</h2>
+                <p>29 October 202</p>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <img src="img/logo.png" width="100">
+
+            </div>
+            <div class="footer-column">
+                <h3>QUICK LINKS</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="offer2.html">Offer</a></li>
+                    <li><a href="abouteco.html">About Us</a></li>
+                    <li><a href="Coconut_shell.html">Product</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="payment.html">Payment</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>LET US HELP YOU</h3>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Return & Exchange</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Shipping Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>GET IN TOUCH</h3>
+                <p>📞 +91-8146793738</p>
+                <p>📧 ktarundeep24@gmail.com</p>
+                <div class="social-icons">
+                    <a href="#">🔵</a>
+                    <a href="#">🐦</a>
+                    <a href="#">📸</a>
+                    <a href="#">▶️</a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <footer>
+        <p> 2025 Eco-Friendly Store. All rights reserved</p>
+    </footer>
+    <!--<footer class="footer">
+        <div class="container-i5">
+            <div class="footer-column">
+                <h3>Company</h3>
+                <div class="underline"></div>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Affiliate Program</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Get Help</h3>
+                <div class="underline"></div>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Order Status</a></li>
+                    <li><a href="#">Payment Options</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Online Shop</h3>
+                <div class="underline"></div>
+                <ul>
+                    <li><a href="#">Watch</a></li>
+                    <li><a href="#">Bag</a></li>
+                    <li><a href="#">Shoes</a></li>
+                    <li><a href="#">Dress</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <div class="underline"></div>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+</body>
+</html>

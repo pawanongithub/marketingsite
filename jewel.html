@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .col-1 img {
+      margin: 0px 10px;
+      height: 55px;
+      width: 55px;
+      border-radius: 50%;
+      margin-top: 5px;
+    }
+
+    ul li {
+      display: inline-block;
+
+    }
+
+    ul li a {
+      text-decoration: none;
+      color: #1d1b1b;
+      padding: 2px 40px;
+      border: 1px solid transparent;
+      transition: 0.5 ease;
+      font-size: x-large;
+    }
+
+    ul li a:hover {
+      background-color: #1d1b1b94;
+      color: #ffffff;
+    }
+
+    ul li.active a {
+      background-color: #fff;
+      color: #0000;
+
+    }
+
+    .col-2 a {
+      font-size: x-large;
+    }
+
+    .col-3 {
+      position: absolute;
+      right: 15px;
+    }
+
+    .col-3 i {
+      font-size: 30px;
+      margin: 10px 20px;
+    }
+
+    cont {
+      /* background-image:url(img\payment-img.jpg); */
+      /* background-size:cover; */
+      width: 100%;
+      height: 900px;
+      background-repeat: no-repeat;
+    }
+
+    nav-bar {
+      height: 70px;
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      background-color: white;
+      color: rgb(216, 33, 33);
+      border-bottom: 1px #d8edf3;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    }
+
+    * {
+      font-family: MV Boli;
+    }
+
+    .tara {
+      height: 420px;
+      border: 2px solid black;
+      background-image: url(img/terabg.jfif);
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .container {
+      border: 2px solid rgb(114, 98, 98);
+      border: hidden;
+      height: 1300px;
+    }
+
+    .image-container {
+      border: 2px solid rgb(170, 98, 98);
+      width: 20%;
+      height: 355px;
+      float: left;
+      margin: 15px;
+      padding: 15px;
+      border-radius: 19px;
+      box-shadow: 5px 5px 10px rgb(73, 70, 70);
+    }
+
+    .image-container img {
+      width: 100%;
+      height: 200px;
+      border-radius: 19px;
+    }
+
+    .image-container figcaption {
+      font-size: larger;
+      text-align: center;
+    }
+
+    .image-container button {
+      border-radius: 15px;
+      color: rgb(36, 32, 32);
+      background-color: rgb(182, 102, 56);
+      position: absolute;
+      margin: 25px;
+      padding: 1px;
+    }
+
+    .image-container p {
+      font-size: 20px;
+      text-align: center;
+    }
+
+    .left button {
+      float: left;
+    }
+
+    .right p {
+      float: right;
+    }
+
+
+    footer {
+      text-align: center;
+      padding: 1%;
+      background: #baaeae;
+      color: white;
+      position: relative;
+
+      width: 100%;
+
+      box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="cont">
+    <nav-bar>
+      <div class=" col-1">
+        <a href="index.html">
+          <img src="img\logo.png"></a>
+      </div>
+      <div class="col-2">
+        <ul>
+          <li><a href=index.html>Home</a></li>
+          <li><a href="offer2.html">Shop</a></li>
+          <li><a href="abouteco.html">About Us</a></li>
+          <!-- <li><a href="Coconut_shell.html">Product</a></li> -->
+          <li><a href="feedback.html">Feedback</a></li>
+          <li><a href="payment.html">Payment</a></li>
+        </ul>
+      </div>
+      <div class="col-3">
+        <i class="fa-solid fa-magnifying-glass" style="color: #f1b9b9;"></i>
+        <i class="fa-solid fa-bag-shopping" style="color: #f1b9b9;"></i>
+        <i class="fa-regular fa-user" style="color: #f1b9b9;"></i>
+
+
+      </div>
+    </nav-bar>
+  </div>
+  <h1>Tarracotta Jewellery Products</h1>
+
+  <div class="container">
+    <div class="image-container">
+      <a href="prod1.html">
+        <img src="img/jewel (1).jfif" alt="Description of the image">
+      </a>
+      <figcaption>Gold and choco jewellery</figcaption>
+      <p>₹30 per piece</p>
+      <div class="left">
+        <button>ADD TO CART</button>
+      </div>
+      <div class="right">
+        <p>56 views</p>
+      </div>
+
+      <button>ADD TO CARD</button>
+    </div>
+
+    <div class="image-container">
+      <a href="prod1.html">
+        <img src="img/jewel (7).jfif" alt="Description of the image">
+      </a>
+      <figcaption>Terracotta Earrings</figcaption>
+      <p>₹30 per piece</p>
+      <div class="left">
+        <button>ADD TO CART</button>
+      </div>
+      <div class="right">
+        <p>56 views</p>
+      </div>
+    </div>
+
+    <div class="image-container">
+      <a href="prod1.html">
+        <img src="img/download (8).jfif" alt="Description of the image">
+      </a>
+      <figcaption>Rustic Terra Drops</figcaption>
+      <p>₹30 per piece</p>
+      <div class="left">
+        <button>ADD TO CART</button>
+      </div>
+      <div class="right">
+        <p>56 views</p>
+      </div>
+    </div>
+
+    <div class="image-container">
+      <a href="prod1.html">
+        <img src="img/jewels.jfif" alt="Description of the image">
+      </a>
+      <figcaption>Heart Shape Dotted Earrings</figcaption>
+      <p>₹30 per piece</p>
+      <div class="left">
+        <button>ADD TO CART</button>
+      </div>
+      <div class="right">
+        <p>56 views</p>
+      </div>
+    </div>
+
+    <div class="image-container">
+      <a href="prod1.html">
+        <img src="img/jewel (10).jfif" alt="Description of the image">
+      </a>
+      <figcaption>Terracotta Jewellery Set</figcaption>
+      <p>₹30 per piece</p>
+      <div class="left">
+        <button>ADD TO CART</button>
+      </div>
+      <div class="right">
+        <p>56 views</p>
+      </div>
+    </div>
+
+    <div class="image-container">
+      <a href="prod1.html">
+        <img src="img/jewel (11).jfif" alt="Description of the image">
+      </a>
+      <figcaption>Terra Pink Jewellery Set</figcaption>
+      <p>₹30 per piece</p>
+      <div class="left">
+        <button>ADD TO CART</button>
+      </div>
+      <div class="right">
+        <p>56 views</p>
+      </div>
+    </div>
+
+    <div class="image-container">
+      <a href="prod1.html">
+        <img src="img/download.jfif" alt="Description of the image">
+      </a>
+      <figcaption>Terracotta Jewellery Set</figcaption>
+      <p>₹30 per piece</p>
+      <div class="left">
+        <button>ADD TO CART</button>
+      </div>
+      <div class="right">
+        <p>56 views</p>
+      </div>
+    </div>
+    <div class="image-container">
+      <a href="prod1.html">
+        <img src="img/jewel3.jfif" alt="Description of the image">
+      </a>
+      <figcaption>Terracotta Jewellery Set</figcaption>
+      <p>₹30 per piece</p>
+      <div class="left">
+        <button>ADD TO CART</button>
+      </div>
+      <div class="right">
+        <p>56 views</p>
+      </div>
+    </div>
+    <div class="image-container">
+      <a href="prod1.html">
+        <img src="img/jewel4.jfif" alt="Description of the image">
+      </a>
+      <figcaption>Terra Bangles</figcaption>
+      <p>₹30 per piece</p>
+      <div class="left">
+        <button>ADD TO CART</button>
+      </div>
+      <div class="right">
+        <p>56 views</p>
+      </div>
+    </div>
+
+    <div class="image-container">
+      <a href="prod1.html">
+        <img src="img/jewel5.jfif" alt="Description of the image">
+      </a>
+      <figcaption>Terra Bangles</figcaption>
+      <p>₹30 per piece</p>
+      <div class="left">
+        <button>ADD TO CART</button>
+      </div>
+      <div class="right">
+        <p>56 views</p>
+      </div>
+    </div>
+
+    <div class="image-container">
+      <a href="prod1.html">
+        <img src="img/jewel6.jfif" alt="Description of the image">
+      </a>
+      <figcaption>Terra Bangles</figcaption>
+      <p>₹30 per piece</p>
+      <div class="left">
+        <button>ADD TO CART</button>
+      </div>
+      <div class="right">
+        <p>56 views</p>
+      </div>
+    </div>
+
+    <div class="image-container">
+      <a href="prod1.html">
+        <img src="img/jewels.jfif" alt="Description of the image">
+      </a>
+      <figcaption>Heart Dotted Terra Earrings</figcaption>
+      <p>₹30 per piece</p>
+      <div class="left">
+        <button>ADD TO CART</button>
+      </div>
+      <div class="right">
+        <p>56 views</p>
+      </div>
+    </div>
+
+    <div class="image-container">
+      <a href="prod1.html">
+        <img src="img/jewel18.jfif" alt="Description of the image">
+      </a>
+      <figcaption>Terra Bangles</figcaption>
+      <p>₹30 per piece</p>
+      <div class="left">
+        <button>ADD TO CART</button>
+      </div>
+      <div class="right">
+        <p>56 views</p>
+      </div>
+    </div>
+
+    <div class="image-container">
+      <a href="prod1.html">
+        <img src="img/jewel19.jfif" alt="Description of the image">
+      </a>
+      <figcaption>Terra Bangles</figcaption>
+      <p>₹30 per piece</p>
+      <div class="left">
+        <button>ADD TO CART</button>
+      </div>
+      <div class="right">
+        <p>56 views</p>
+      </div>
+    </div>
+
+    <div class="image-container">
+      <a href="prod1.html">
+        <img src="img/jewel20.jfif" alt="Description of the image">
+      </a>
+      <figcaption>Terracotta Earrings</figcaption>
+      <p>₹30 per piece</p>
+      <div class="left">
+        <button>ADD TO CART</button>
+      </div>
+      <div class="right">
+        <p>56 views</p>
+      </div>
+    </div>
+
+    <div class="image-container">
+      <a href="prod1.html">
+        <img src="img/jewel21.jfif" alt="Description of the image">
+      </a>
+      <figcaption>Terracotta Earrings</figcaption>
+      <p>₹30 per piece</p>
+      <div class="left">
+        <button>ADD TO CART</button>
+      </div>
+      <div class="right">
+        <p>56 views</p>
+      </div>
+    </div>
+
+  </div>
+  <!--footer starts from here...-->
+
+
+
+  <!-- <footer>
+    <div class="footer-container">
+      <div class="footer-column">
+        <img src="img/logo.png" width="100">
+
+      </div>
+      <div class="footer-column">
+        <h3>QUICK LINKS</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="offer2.html">Offer</a></li>
+          <li><a href="abouteco.html">About Us</a></li>
+          <li><a href="Coconut_shell.html">Product</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+          <li><a href="payment.html">Payment</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>LET US HELP YOU</h3>
+        <ul>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Return & Exchange</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Shipping Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>GET IN TOUCH</h3>
+        <p>📞 +1234567890</p>
+        <p>📧 abc@gmail.com</p>
+        <div class="social-icons">
+          <a href="#">🔵</a>
+          <a href="#">🐦</a>
+          <a href="#">📸</a>
+          <a href="#">▶️</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <footer>
+    <p> 2025 Eco-Friendly Store. All rights reserved</p>
+  </footer> -->
+</body>
+
+</html>
