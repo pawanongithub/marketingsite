@@ -38,10 +38,7 @@ ul li a {
     font-size: x-large;
 }
 
-ul li a:hover {
-    background-color: #1d1b1b94;
-    color: #ffffff;
-}
+
 
 ul li a:hover {
     background-color: #1d1b1b94;
@@ -58,10 +55,6 @@ ul li.active a {
     font-size: x-large;
 }
 
-.col-2 a {
-    font-size: x-large;
-}
-
 .col-3 {
     position: absolute;
     right: 15px;
@@ -72,10 +65,7 @@ ul li.active a {
     margin: 10px 20px;
 }
 
-.col-3 i {
-    font-size: 30px;
-    margin: 10px 20px;
-}
+
 
 .cont {
 
@@ -246,7 +236,7 @@ footer {
     text-align: center;
     padding: 20px 0;
     background: #baaeae;
-    color: white;
+    color: rgb(15, 15, 15);
     position: relative;
     bottom: 0;
     width: 100%;
@@ -286,7 +276,7 @@ footer {
 
 .footer-column ul li a {
     font-size: medium;
-    color: #9ca3af;
+    color: #1d1e20;
     text-decoration: none;
     transition: color 0.3s;
 }
