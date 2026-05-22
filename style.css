@@ -10,36 +10,11 @@
      width: 100%;
      height: 900px;
      background-repeat: no-repeat;
-
-
  }
 
- .cont a {
-     font-size: medium;
- }
-
- nav {
-     height: 70px;
-     width: 100%;
-     display: flex;
-     justify-content: flex-start;
- }
-
- * {
-     margin: 0px;
-     padding: 0px;
-     font-family: MV Boli;
- }
-
- .cont {
-     background-image: url(img/Old_monk.jpg);
-     background-size: cover;
-     width: 100%;
-     height: 900px;
-     background-repeat: no-repeat;
 
 
- }
+
 
  .cont a {
      font-size: medium;
@@ -90,10 +65,10 @@
      border: none;
  }
 
- :hover {
+ /* button :hover {
      background-color: #1d1b1b94;
      color: #ffffff;
- }
+ } */
 
 
  .col-1 img {
@@ -164,7 +139,7 @@
      right: 15px;
  }
 
- .col-3 i {
+ /* .col-3 i {
      font-size: 25px;
      margin: 10px 20px;
  }
@@ -173,7 +148,7 @@
      display: flex;
 
      justify-content: space-around;
- }
+ } */
 
  .col-3 i {
      font-size: 25px;
