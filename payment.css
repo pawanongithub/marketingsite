@@ -22,7 +22,7 @@
     margin-top: 5px;
 }
 
-ul li {}
+
 
 ul li {
     display: inline-block;
@@ -77,7 +77,7 @@ ul li.active a {
     margin: 10px 20px;
 }
 
-cont {
+.cont {
 
     /* background-image:url(img\payment-img.jpg); */
     /* background-size:cover; */
